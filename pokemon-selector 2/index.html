@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/home.css">
+    <title>Pokemon Selector</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <img src="./assets/Images/logo.svg">
+        </div>
+        <h2 class="header__text">Choose Your Pokemon</h2>
+    </header>
+    <section class="cards">
+        <section class="cards__container">
+            <div id="image1" class="cards__content" data-name="ditto">
+                <img class="cards__content-image" src="./assets/Images/ditto.svg">
+                <h2>Ditto</h2>
+            </div>
+            <div id="image2" class="cards__content" data-name="pichu">
+                <img class="cards__content-image" src="./assets/Images/pichu.svg">
+                <h2>Pichu</h2>
+            </div>
+            <div id="image3" class="cards__content" data-name="bulbasaur">
+                <img class="cards__content-image" src="./assets/Images/bulbasaur.svg">
+                <h2>Bulbasaur</h2>
+            </div>
+        </section>
+        <section class="cards__container">
+            <div id="image4" class="cards__content" data-name="gengar">
+                <img class="cards__content-image" src="./assets/Images/gengar.svg">
+                <h2>Gengar</h2>
+            </div>
+            <div id="image5" class="cards__content" data-name="voltorb">
+                <img class="cards__content-image" src="./assets/Images/voltorb.svg">
+                <h2>Voltorb</h2>
+            </div>
+            <div id="image6" class="cards__content" data-name="snorlax">
+                <img class="cards__content-image" src="./assets/Images/snorlax.svg">
+                <h2>Snorlax</h2>
+            </div>
+        </section>
+    </section>
+    <section class="selected-stats">
+        <article class="stats"></article>
+    </section>
+    <footer class="footer">
+        <section class="footer__section">
+            <p>Brainstation 2023</p>
+            <p>By: Nathan Thanakone, Tara Wiedeman, Chloe Tso</p>
+            <p>Pokedex</p>
+        </section>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./scripts/index-page.js"></script>
+</body>
+</html>

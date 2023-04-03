@@ -1,0 +1,132 @@
+@font-face {
+    font-family: 'AvenirNext LT Pro';
+    src: url(../assets/Fonts/Alternative-files/AvenirNextLTProBold.ttf) format('truetype'),
+        url(../assets/Fonts/AvenirNextLTPro-Bold.otf) format('opentype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AvenirNext LT Pro';
+    src: url(../assets/Fonts/Alternative-files/AvenirNextLTProDemi.ttf) format('truetype'),
+        url(../assets/Fonts/AvenirNextLTPro-Demi.otf) format('opentype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AvenirNext LT Pro';
+    src: url(../assets/Fonts/Alternative-files/AvenirNextLTPro.ttf) format('truetype'),
+        url(../assets/Fonts/AvenirNextLTPro-Regular.otf) format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    font-family: 'AvenirNext LT Pro';
+}
+
+.header {
+    background-color: #E1E1E1;
+    padding: 1rem;
+
+    &__logo, &__text {
+        text-align: center;
+        padding: 0.25rem;
+    }
+}
+
+.cards {
+    background-color: #F1FFFF;
+    border-bottom: 1px solid black;
+    padding: 1rem;
+
+    &__container {
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+    }
+
+    &__content {
+        border: 1px solid black;
+        border-radius: 1rem;
+        padding: 1rem;
+        margin: 2rem 0;
+        box-shadow: 4px 4px rgba(0,0,0,0.7);
+
+        &-image {
+            height: 15rem;
+            width: 15rem;
+        }
+
+        &#image1 {
+            background-color: #FAF0FE;
+        }
+
+        &#image2 {
+            background-color: #FDFEF0;
+        }
+
+        &#image3 {
+            background-color: #F2FEF0;
+        }
+
+        &#image4 {
+            background-color: #F0D1FF;
+        }
+
+        &#image5 {
+            background-color: #FFF1F1;
+        }
+
+        &#image6 {
+            background-color: #E0F7FF;
+        }
+    }
+}
+
+.selected-stats {
+    background-color: beige;
+    display: flex;
+    justify-content: center;
+}
+
+.stats {
+
+    &__container {
+        background-color: white;
+        text-align: center;
+        border: 1px solid black;
+        border-radius: 1rem;
+        padding: 1rem;
+        margin: 2rem;
+        box-shadow: 4px 4px rgba(0,0,0,0.7);
+    }
+
+    &__image {
+        height: 15rem;
+        width: 15rem;
+    }
+    
+    &__details {
+        text-align: center;
+    }
+}
+
+.footer {
+    background-color: burlywood;
+    padding: 1.5rem;
+
+    &__section {
+        display: flex;
+        justify-content: space-around;
+    }
+}
